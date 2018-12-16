@@ -1,12 +1,14 @@
+import CssBaseline from '@material-ui/core/CssBaseline'
 import Header from './Header'
 
 
 
 const Layout = (props) => (
-  <div>
+  <React.Fragment>
+    <CssBaseline />
     <Header />
     {props.children}
-  </div>
+  </React.Fragment>
 )
 
 export default Layout

@@ -1,5 +1,3 @@
-// May not be the best way to use this componnt.
-import Layout from './Layout'
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';

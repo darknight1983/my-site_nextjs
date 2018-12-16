@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import withLayout from '../lib/withLayout';
 import { myPhoto, indexPageImg } from '../components/sharedStyles';
 import AboutMe from '../components/AboutMe';
+import Projects from '../components/Projects';
 
 
 
@@ -38,6 +39,7 @@ const Index = () => (
       </Grid>
     </section>
     <AboutMe />
+    <Projects />
   </div>
 )
 

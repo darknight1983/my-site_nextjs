@@ -49,7 +49,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 var styles = function styles(theme) {
-  return {};
+  return {
+    items: {
+      width: '30%',
+      height: '30%'
+    }
+  };
 };
 
 var Projects =
@@ -58,18 +63,41 @@ function (_React$Component) {
   _inherits(Projects, _React$Component);
 
   function Projects(props) {
+    var _this;
+
     _classCallCheck(this, Projects);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Projects).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Projects).call(this, props));
+    _this.state = {
+      projects: [{
+        title: 'Node Server',
+        description: 'This is a brief description of this project that I am going to use as an example while Im building out my updated website',
+        link: 'http://github.com',
+        technologies: ['React', 'Node', 'Express']
+      }, {
+        title: 'Node Server',
+        description: 'This is a brief description of this project that I am going to use as an example while Im building out my updated website',
+        link: 'http://github.com',
+        technologies: ['React', 'Node', 'Express']
+      }, {
+        title: 'Node Server',
+        description: 'This is a brief description of this project that I am going to use as an example while Im building out my updated website',
+        link: 'http://github.com',
+        technologies: ['React', 'Node', 'Express']
+      }]
+    };
+    return _this;
   }
 
   _createClass(Projects, [{
     key: "render",
     value: function render() {
+      var classes = this.props.classes;
+      var projects = this.state.projects;
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 47
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -79,32 +107,42 @@ function (_React$Component) {
         align: "center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 48
         },
         __self: this
       }, "Projects"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
         container: true,
+        justify: "center",
+        spacing: 8,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 51
         },
         __self: this
-      }, [0, 1, 2].map(function (item, i) {
+      }, projects.map(function (project, i) {
         return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
           item: true,
           key: i,
+          className: classes.items,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 25
+            lineNumber: 53
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default.a, {
+          square: true,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 26
+            lineNumber: 54
           },
           __self: this
-        }, "This is a test"));
+        }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 55
+          },
+          __self: this
+        }, project.title)));
       })));
     }
   }]);
@@ -117,4 +155,4 @@ function (_React$Component) {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.d96c2ff41389a91a7d05.hot-update.js.map
+//# sourceMappingURL=index.js.358b332b447beaa5ba45.hot-update.js.map

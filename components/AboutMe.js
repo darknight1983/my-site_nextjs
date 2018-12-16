@@ -2,6 +2,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types'
+import posed from 'react-pose';
 
 const styles = theme => ({
   title: {
@@ -10,6 +11,17 @@ const styles = theme => ({
   icons: {
     width: '30px',
     height: '30px'
+  }
+})
+
+const IconBox = posed.div({
+  hoverable: true,
+  init: {
+    scale: 1,
+    boxShadow: '0px 0px 0px rgba(0,0,0,0)'
+  },
+  hover: {
+    scale: 1.2,
   }
 })
 
@@ -26,13 +38,19 @@ const About = (props) => {
           </Grid>
           <Grid container justify='center' spacing={24}>
             <Grid item>
-              <img src='/static/imgs/GitHub-Mark-64px.png' className={classes.icons}/>
+              <IconBox>
+                <img src='/static/imgs/GitHub-Mark-64px.png' className={classes.icons}/>
+              </IconBox>
             </Grid>
             <Grid item>
-              <img src='/static/imgs/Twitter_Social_Icon_Circle_Color.png' className={classes.icons}/>
+              <IconBox>
+                <img src='/static/imgs/Twitter_Social_Icon_Circle_Color.png' className={classes.icons}/>
+              </IconBox>
             </Grid>
             <Grid item>
-              <img src='/static/imgs/linkedin.png' className={classes.icons}/>
+              <IconBox>
+                <img src='/static/imgs/linkedin.png' className={classes.icons}/>
+              </IconBox>
             </Grid>
           </Grid>
         </Grid>

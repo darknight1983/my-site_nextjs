@@ -19,7 +19,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-pose */ "./node_modules/react-pose/dist/react-pose.es.js");
 var _jsxFileName = "/Users/jacolbygreen/front-end-dev/myPortfolio-next.js/components/AboutMe.js";
+
 
 
 
@@ -38,18 +40,29 @@ var styles = function styles(theme) {
   };
 };
 
+var IconBox = react_pose__WEBPACK_IMPORTED_MODULE_5__["default"].div({
+  hoverable: true,
+  init: {
+    scale: 1,
+    boxShadow: '0px 0px 0px rgba(0,0,0,0)'
+  },
+  hover: {
+    scale: 1.2
+  }
+});
+
 var About = function About(props) {
   var classes = props.classes;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 31
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 32
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -57,14 +70,14 @@ var About = function About(props) {
     justify: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 33
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
     item: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -76,7 +89,7 @@ var About = function About(props) {
     gutterBottom: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 35
     },
     __self: this
   }, "Jacolby Green")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -85,14 +98,20 @@ var About = function About(props) {
     spacing: 24,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 39
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
     item: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 40
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconBox, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -100,14 +119,20 @@ var About = function About(props) {
     className: classes.icons,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 42
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
     item: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 45
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconBox, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -115,14 +140,20 @@ var About = function About(props) {
     className: classes.icons,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 47
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
     item: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 50
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconBox, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -130,15 +161,15 @@ var About = function About(props) {
     className: classes.icons,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 52
     },
     __self: this
-  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
     container: true,
     justify: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 57
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -149,7 +180,7 @@ var About = function About(props) {
     lg: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 58
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -157,7 +188,7 @@ var About = function About(props) {
     component: "p",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 59
     },
     __self: this
   }, "Whats up, Im Jacolby. Im a Full-Stack Web Developer currently living in Plano, Tx. Currently, I am using my network to find projects in order to futher advance my skills and portfolio. While I enjoy building products accross the full-stack, I also enjoy talking about tech from a broad overview and how it will change us in the future.")))));
@@ -165,10 +196,7 @@ var About = function About(props) {
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["withStyles"])(styles)(About));
 
-/***/ }),
-
-/***/ "./components/Layout.js":
-false
+/***/ })
 
 })
-//# sourceMappingURL=index.js.8473166fc79687bf0cfa.hot-update.js.map
+//# sourceMappingURL=index.js.eb583b576fdcbf37946d.hot-update.js.map

@@ -11,6 +11,10 @@ const styles = theme => ({
   icons: {
     width: '30px',
     height: '30px'
+  },
+  margin: {
+    marginTop: '15px',
+    marginBottom: '15px'
   }
 })
 
@@ -54,9 +58,9 @@ const About = (props) => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid container justify='center'>
+        <Grid container justify='center' className={classes.margin}>
           <Grid item xs={10} sm={10} md={6} lg={6}>
-            <Typography variant='title' component='p'>
+            <Typography variant='title' component='p' paragraph={true} align='center'>
               Whats up, Im Jacolby. Im a Full-Stack Web Developer currently
               living in Plano, Tx. Currently, I am using my network to find
               projects in order to futher advance my skills and portfolio. While I

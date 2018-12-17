@@ -25,7 +25,7 @@ const styles = theme => ({
     height: '100%'
   },
   margin: {
-    marginTop: '20px',
+    marginTop: '100px',
     marginBottom: '40px'
   },
   h1: {

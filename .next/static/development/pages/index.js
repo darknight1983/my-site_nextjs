@@ -239,9 +239,7 @@ var _jsxFileName = "/Users/jacolbygreen/front-end-dev/myPortfolio-next.js/compon
 
 var styles = function styles(theme) {
   return {
-    name: {
-      fontWeight: 500
-    }
+    name: {}
   };
 };
 
@@ -363,7 +361,7 @@ var styles = function styles(theme) {
       height: '100%'
     },
     margin: {
-      marginTop: '20px',
+      marginTop: '100px',
       marginBottom: '40px'
     },
     h1: {

@@ -8,7 +8,7 @@ import { styledAppBar } from './sharedStyles'
 
 const styles = theme => ({
   name: {
-    fontWeight: 500
+    
   }
 })
 

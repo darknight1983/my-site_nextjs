@@ -12,8 +12,7 @@ import React from 'react';
 
 const styles = theme => ({
   items: {
-    width: '30%',
-    height: '30%'
+
   },
   projects: {
     width: '70%',
@@ -88,6 +87,18 @@ class Projects extends React.Component {
           description: 'This is a brief description of this project that I am going to use as an example while Im building out my updated website',
           link: 'http://github.com',
           technologies: ['React', 'Node', 'Express']
+        },
+        {
+          title: 'Node Server',
+          description: 'This is a brief description of this project that I am going to use as an example while Im building out my updated website',
+          link: 'http://github.com',
+          technologies: ['React', 'Node', 'Express']
+        },
+        {
+          title: 'Node Server',
+          description: 'This is a brief description of this project that I am going to use as an example while Im building out my updated website',
+          link: 'http://github.com',
+          technologies: ['React', 'Node', 'Express']
         }
       ]
     }
@@ -104,14 +115,14 @@ class Projects extends React.Component {
                     className={classes.margin}>
           Projects
         </Typography>
-        <Grid container justify='center' spacing={16}>
+        <Grid container justify="center" alignContent="space-around" spacing={16}>
           {projects.map((project, i) => (
             <Grid item key={i}
                   className={classes.items}
                   xs={10}
                   sm={10}
-                  md={3}
-                  lg={3}>
+                  md={5}
+                  lg={5}>
               <Paper square={true}>
                 <Typography variant='h5'
                             component='h1'

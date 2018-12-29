@@ -299,6 +299,187 @@ var About = function About(props) {
 
 /***/ }),
 
+/***/ "./components/Footer.js":
+/*!******************************!*\
+  !*** ./components/Footer.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Grid */ "@material-ui/core/Grid");
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Typography */ "@material-ui/core/Typography");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-pose */ "react-pose");
+/* harmony import */ var react_pose__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_pose__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/link */ "next/link");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
+var _jsxFileName = "/Users/jacolbygreen/front-end-dev/myPortfolio-next.js/components/Footer.js";
+
+
+
+
+
+
+
+
+var styles = function styles(theme) {
+  return {
+    root: {
+      backgroundColor: '#0D47A1',
+      opacity: 0.9,
+      height: '35vh',
+      color: 'white'
+    },
+    icons: {
+      width: '30px',
+      height: '30px'
+    },
+    margin: {
+      marginTop: 50
+    }
+  };
+};
+
+var IconBox = react_pose__WEBPACK_IMPORTED_MODULE_5___default.a.div({
+  hoverable: true,
+  init: {
+    scale: 1,
+    boxShadow: '0px 0px 0px rgba(0,0,0,0)'
+  },
+  hover: {
+    scale: 1.2
+  }
+});
+
+var Footer = function Footer(props) {
+  var classes = props.classes;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: classes.root,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    container: true,
+    justify: "center",
+    xs: 12,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    item: true,
+    className: classes.margin,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, "Lets Connect!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    container: true,
+    justify: "center",
+    spacing: 24,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    item: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconBox, {
+    onClick: function onClick() {
+      return window.location.href = "https://github.com/darknight1983";
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "/static/imgs/GitHub-Mark-64px.png",
+    className: classes.icons,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    item: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconBox, {
+    onClick: function onClick() {
+      return window.location.href = "https://twitter.com/CoodyMac";
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "/static/imgs/Twitter_Social_Icon_Circle_Color.png",
+    className: classes.icons,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    item: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconBox, {
+    onClick: function onClick() {
+      return window.location.href = "https://linkedin.com/in/jacolby-green";
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "/static/imgs/linkedin.png",
+    className: classes.icons,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["withStyles"])(styles)(Footer));
+
+/***/ }),
+
 /***/ "./components/Header.js":
 /*!******************************!*\
   !*** ./components/Header.js ***!
@@ -333,7 +514,9 @@ var _jsxFileName = "/Users/jacolbygreen/front-end-dev/myPortfolio-next.js/compon
 
 var styles = function styles(theme) {
   return {
-    name: {}
+    appBar: {
+      opacity: '0.95'
+    }
   };
 };
 
@@ -349,6 +532,7 @@ function Header(props) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_3___default.a, {
     position: "fixed",
     color: "secondary",
+    className: classes.appBar,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
@@ -442,10 +626,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 var styles = function styles(theme) {
   return {
-    items: {
-      width: '30%',
-      height: '30%'
-    },
+    items: {},
     projects: {
       width: '70%',
       height: '70%',
@@ -527,6 +708,16 @@ function (_React$Component) {
         description: 'This is a brief description of this project that I am going to use as an example while Im building out my updated website',
         link: 'http://github.com',
         technologies: ['React', 'Node', 'Express']
+      }, {
+        title: 'Node Server',
+        description: 'This is a brief description of this project that I am going to use as an example while Im building out my updated website',
+        link: 'http://github.com',
+        technologies: ['React', 'Node', 'Express']
+      }, {
+        title: 'Node Server',
+        description: 'This is a brief description of this project that I am going to use as an example while Im building out my updated website',
+        link: 'http://github.com',
+        technologies: ['React', 'Node', 'Express']
       }]
     };
     return _this;
@@ -545,7 +736,7 @@ function (_React$Component) {
         className: classes.margin,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 110
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -556,16 +747,17 @@ function (_React$Component) {
         className: classes.margin,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 111
         },
         __self: this
       }, "Projects"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
         container: true,
         justify: "center",
+        alignContent: "space-around",
         spacing: 16,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 118
         },
         __self: this
       }, projects.map(function (project, i) {
@@ -575,18 +767,18 @@ function (_React$Component) {
           className: classes.items,
           xs: 10,
           sm: 10,
-          md: 3,
-          lg: 3,
+          md: 5,
+          lg: 5,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 109
+            lineNumber: 120
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default.a, {
           square: true,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 115
+            lineNumber: 126
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -597,7 +789,7 @@ function (_React$Component) {
           className: classes.h1,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 116
+            lineNumber: 127
           },
           __self: this
         }, project.title), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -612,7 +804,7 @@ function (_React$Component) {
           className: classes.clickDesc,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 123
+            lineNumber: 134
           },
           __self: this
         }, "Click for description"), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(Content, {
@@ -620,7 +812,7 @@ function (_React$Component) {
           pose: open === i ? 'open' : 'closed',
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 130
+            lineNumber: 141
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -629,7 +821,7 @@ function (_React$Component) {
           variant: "subheading",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 131
+            lineNumber: 142
           },
           __self: this
         }, project.description)), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -637,7 +829,7 @@ function (_React$Component) {
           justify: "center",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 147
+            lineNumber: 158
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -645,13 +837,13 @@ function (_React$Component) {
           className: classes.projects,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 148
+            lineNumber: 159
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(ImgBox, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 149
+            lineNumber: 160
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
@@ -660,27 +852,27 @@ function (_React$Component) {
           className: classes.projectImg,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 150
+            lineNumber: 161
           },
           __self: this
         })))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
           container: true,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 156
+            lineNumber: 167
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
           item: true,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 157
+            lineNumber: 168
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_4___default.a, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 158
+            lineNumber: 169
           },
           __self: this
         }, project.technologies.map(function (tech, i) {
@@ -688,7 +880,7 @@ function (_React$Component) {
             button: true,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 160
+              lineNumber: 171
             },
             __self: this
           }, tech);
@@ -805,11 +997,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/CssBaseline */ "@material-ui/core/CssBaseline");
 /* harmony import */ var _material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _lib_context__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../lib/context */ "./lib/context.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Footer */ "./components/Footer.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _lib_context__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../lib/context */ "./lib/context.js");
 var _jsxFileName = "/Users/jacolbygreen/front-end-dev/myPortfolio-next.js/lib/withLayout.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -839,6 +1032,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 function withLayout(BaseComponent) {
   var App =
   /*#__PURE__*/
@@ -851,7 +1045,7 @@ function withLayout(BaseComponent) {
       _classCallCheck(this, App);
 
       _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props, context));
-      _this.pageContext = _this.props.pageContext || Object(_lib_context__WEBPACK_IMPORTED_MODULE_5__["default"])();
+      _this.pageContext = _this.props.pageContext || Object(_lib_context__WEBPACK_IMPORTED_MODULE_6__["default"])();
       return _this;
     }
 
@@ -867,36 +1061,42 @@ function withLayout(BaseComponent) {
     }, {
       key: "render",
       value: function render() {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__["MuiThemeProvider"], {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_5__["MuiThemeProvider"], {
           theme: this.pageContext.theme,
           sheetsManager: this.pageContext.sheetsManager,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 27
+            lineNumber: 28
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_1___default.a, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 31
+            lineNumber: 32
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 32
+            lineNumber: 33
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], _extends({}, this.props, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 33
+            lineNumber: 34
           },
           __self: this
         })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BaseComponent, _extends({}, this.props, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 34
+            lineNumber: 35
+          },
+          __self: this
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], _extends({}, this.props, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 36
           },
           __self: this
         }))));
@@ -907,7 +1107,7 @@ function withLayout(BaseComponent) {
   }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
   App.propTypes = {
-    pageContext: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object
+    pageContext: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object
   };
   App.defaultProps = {
     pageContext: null
@@ -1021,7 +1221,7 @@ var Index = function Index() {
     item: true,
     xs: 8,
     sm: 6,
-    md: 5,
+    md: 4,
     lg: 4,
     __source: {
       fileName: _jsxFileName,
@@ -1214,6 +1414,17 @@ module.exports = require("@material-ui/core/styles");
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "next/link":
+/*!****************************!*\
+  !*** external "next/link" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/link");
 
 /***/ }),
 

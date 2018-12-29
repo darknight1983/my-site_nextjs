@@ -31,7 +31,7 @@ const Index = () => (
     </Head>
     <section style={{'marginTop': '100px'}}>
       <Grid container justify='center'>
-        <Grid item xs={8} sm={6} md={5} lg={4}>
+        <Grid item xs={8} sm={6} md={4} lg={4}>
           <Box style={indexPageImg}>
             <img src='/static/imgs/JacolbyGreen.jpeg' style={myPhoto} />
           </Box>

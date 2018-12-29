@@ -7,8 +7,8 @@ import { styledAppBar } from './sharedStyles'
 
 
 const styles = theme => ({
-  name: {
-    
+  appBar: {
+    opacity: '0.95'
   }
 })
 
@@ -18,7 +18,7 @@ function Header(props) {
   const { classes } = props;
   return (
       <div className={styledAppBar}>
-        <AppBar position="fixed" color="secondary">
+        <AppBar position="fixed" color="secondary" className={classes.appBar}>
           <Toolbar>
             <Typography variant="h5"
                         color="primary"

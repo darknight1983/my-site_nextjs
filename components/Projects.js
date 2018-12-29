@@ -53,7 +53,7 @@ const styles = theme => ({
   },
   button: {
     margin: 10,
-
+    cursor: 'pointer'
   }
 })
 

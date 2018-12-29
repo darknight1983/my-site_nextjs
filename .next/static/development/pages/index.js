@@ -684,7 +684,8 @@ var styles = function styles(theme) {
       opacity: 0.9
     },
     button: {
-      margin: 10
+      margin: 10,
+      cursor: 'pointer'
     }
   };
 };

@@ -44,6 +44,11 @@ const styles = theme => ({
   },
   clickDesc: {
     marginTop: '20px',
+  },
+  techGrid: {
+    backgroundColor: '#9E9E9E',
+    marginTop: 40,
+    opacity: 0.9
   }
 })
 
@@ -71,35 +76,33 @@ class Projects extends React.Component {
       open: false,
       projects: [
         {
-          title: 'Node Server',
-          description: 'This is a brief description of this project that I am going to use as an example while Im building out my updated website',
-          link: 'http://github.com',
-          technologies: ['React', 'Node', 'Express']
+          title: 'Neighborhood Map (React)',
+          description: 'Build a single page map application using React and the Google Maps API. Integrate a third-party data API and make your app accessible and usable offline.',
+          link: 'https://github.com/darknight1983/neighboorhood-react-map',
+          technologies: ['React', 'Google Maps API', 'Material-UI'],
+          image: '/static/imgs/NeighboorhoodMap.png'
         },
         {
-          title: 'Node Server',
-          description: 'This is a brief description of this project that I am going to use as an example while Im building out my updated website',
-          link: 'http://github.com',
-          technologies: ['React', 'Node', 'Express']
+          title: 'Addison Treehouse Benefits',
+          description: "Currently working on a web application for Addision Treehouse which serves as a hub for all member benefits and perks. Future iterations are in progress.",
+          link: "https://github.com/darknight1983/Treehouse.git",
+          technologies: ['Material-UI', 'Next.js', 'React', 'Pose'],
+          image: '/static/imgs/AddisonTreehouse.png'
         },
         {
-          title: 'Node Server',
-          description: 'This is a brief description of this project that I am going to use as an example while Im building out my updated website',
-          link: 'http://github.com',
-          technologies: ['React', 'Node', 'Express']
+          title: 'MyReads: A Book Lending App',
+          description: 'Built a responsive web application that allows users to select and categorize books into a virtual bookshelf. Leveraged React to support a dynamic user interface that interacts with an API server and client library.',
+          link: "https://github.com/darknight1983/myReads",
+          technologies: ['React', 'Node', 'Express'],
+          image: '/static/imgs/testProject.png'
         },
         {
-          title: 'Node Server',
-          description: 'This is a brief description of this project that I am going to use as an example while Im building out my updated website',
-          link: 'http://github.com',
-          technologies: ['React', 'Node', 'Express']
+          title: 'Bamazon',
+          description: 'A Node.js & MySQL digital storefront. This is a command line Node app that mimics a beloved online retailer.',
+          link: 'https://github.com/darknight1983/bamazon_app',
+          technologies: ['MYSQL', 'Inquirer', 'Cli-table', "Node.js"],
+          image: '/static/imgs/bamazon.png'
         },
-        {
-          title: 'Node Server',
-          description: 'This is a brief description of this project that I am going to use as an example while Im building out my updated website',
-          link: 'http://github.com',
-          technologies: ['React', 'Node', 'Express']
-        }
       ]
     }
   }
@@ -145,33 +148,35 @@ class Projects extends React.Component {
                     {project.description}
                   </Typography>
                 </Content>
-                {/*
-
-                  <Typography variant='subheading'
-                              component='p'
-                              align='center'
-                              className={classes.description}>
-                    {project.description}
-                  </Typography>
-                  */}
-
                 <Grid container justify='center'>
                   <Grid item className={classes.projects}>
                     <ImgBox>
-                      <img src='/static/imgs/testProject.png'
+                      <img src={project.image}
                            alt='Image of project'
                            className={classes.projectImg}/>
                     </ImgBox>
                   </Grid>
                 </Grid>
-                <Grid container>
-                  <Grid item>
-                    <List>
-                      {project.technologies.map((tech, i) => (
-                        <ListItem button={true}>{tech}</ListItem>
-                      ))}
-                    </List>
-                  </Grid>
+                <Grid container className={classes.techGrid}>
+                  {project.technologies.map((tech, i) => (
+                    <Grid item xs={6} align="center">
+                      <Typography variant="title" color="primary">
+                        {tech}
+                      </Typography>
+                    </Grid>
+                  ))}
+                  {/*
+
+                    <Grid item>
+                      <List>
+                        {project.technologies.map((tech, i) => (
+                          <ListItem button={true}>{tech}</ListItem>
+                        ))}
+                      </List>
+                    </Grid>
+
+                    */}
+
                 </Grid>
               </Paper>
             </Grid>

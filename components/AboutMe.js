@@ -10,7 +10,7 @@ const styles = theme => ({
   },
   icons: {
     width: '30px',
-    height: '30px'
+    height: '30px',
   },
   margin: {
     marginTop: '15px',
@@ -26,6 +26,7 @@ const IconBox = posed.div({
   },
   hover: {
     scale: 1.2,
+    cursor: 'pointer'
   }
 })
 
@@ -42,17 +43,17 @@ const About = (props) => {
           </Grid>
           <Grid container justify='center' spacing={24}>
             <Grid item>
-              <IconBox>
+              <IconBox onClick={() => window.location.href = "https://github.com/darknight1983"}>
                 <img src='/static/imgs/GitHub-Mark-64px.png' className={classes.icons}/>
               </IconBox>
             </Grid>
             <Grid item>
-              <IconBox>
+              <IconBox onClick={() => window.location.href = "https://twitter.com/CoodyMac"}>
                 <img src='/static/imgs/Twitter_Social_Icon_Circle_Color.png' className={classes.icons}/>
               </IconBox>
             </Grid>
             <Grid item>
-              <IconBox>
+              <IconBox onClick={() => window.location.href = "https://linkedin.com/in/jacolby-green"}>
                 <img src='/static/imgs/linkedin.png' className={classes.icons}/>
               </IconBox>
             </Grid>
@@ -61,11 +62,11 @@ const About = (props) => {
         <Grid container justify='center' className={classes.margin}>
           <Grid item xs={10} sm={10} md={6} lg={6}>
             <Typography variant='title' component='p' paragraph={true} align='center'>
-              Whats up, Im Jacolby. Im a Full-Stack Web Developer currently
-              living in Plano, Tx. Currently, I am using my network to find
+              Hi, I'm Jacolby. I'm a Full-Stack Web Developer currently
+              living in Plano, TX. Currently, I am using my network to find
               projects in order to futher advance my skills and portfolio. While I
-              enjoy building products accross the full-stack, I also enjoy talking
-              about tech from a broad overview and how it will change us in the
+              enjoy building products across the full stack, I also enjoy talking
+              about tech from a broad overview and pondering on how it will change us in the
               future.
             </Typography>
           </Grid>

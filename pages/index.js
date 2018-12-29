@@ -5,8 +5,7 @@ import withLayout from '../lib/withLayout';
 import { myPhoto, indexPageImg } from '../components/sharedStyles';
 import AboutMe from '../components/AboutMe';
 import Projects from '../components/Projects';
-
-
+import ContactMe from '../components/Contact';
 
 
 
@@ -40,6 +39,7 @@ const Index = () => (
     </section>
     <AboutMe />
     <Projects />
+    <ContactMe />
   </div>
 )
 

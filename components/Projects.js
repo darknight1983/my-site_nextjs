@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
+import Button from '@material-ui/core/Button';
 import PropTypes from 'prop-types';
 import posed from 'react-pose';
 import React from 'react';
@@ -49,6 +50,10 @@ const styles = theme => ({
     backgroundColor: '#9E9E9E',
     marginTop: 40,
     opacity: 0.9
+  },
+  button: {
+    margin: 10,
+
   }
 })
 
@@ -59,7 +64,7 @@ const ImgBox = posed.div({
     boxShadow: '0px 0px 0px rgba(0,0,0,0)'
   },
   hover: {
-    scale: 1.6,
+    scale: 1.1,
   }
 })
 
@@ -79,7 +84,7 @@ class Projects extends React.Component {
           title: 'Neighborhood Map (React)',
           description: 'Build a single page map application using React and the Google Maps API. Integrate a third-party data API and make your app accessible and usable offline.',
           link: 'https://github.com/darknight1983/neighboorhood-react-map',
-          technologies: ['React', 'Google Maps API', 'Material-UI'],
+          technologies: ['Google Maps API', 'React', 'Material-UI'],
           image: '/static/imgs/NeighboorhoodMap.png'
         },
         {
@@ -134,6 +139,14 @@ class Projects extends React.Component {
                             className={classes.h1}>
                   {project.title}
                 </Typography>
+                <Grid item xs={12} align="center">
+                  <Button variant="contained"
+                          color="secondary"
+                          className={classes.button}
+                          onClick={() => window.location.href = project.link}>
+                    Code
+                  </Button>
+                </Grid>
                 <Typography variant='title'
                             component='h5'
                             align='center'

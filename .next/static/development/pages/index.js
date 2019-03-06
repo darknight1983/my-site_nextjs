@@ -648,44 +648,45 @@ var styles = function styles(theme) {
   return {
     items: {},
     projects: {
-      width: '70%',
-      height: '70%',
-      marginTop: '10px'
+      width: "70%",
+      height: "70%",
+      marginTop: "10px"
     },
     projectImg: {
-      width: '100%',
-      height: '100%'
+      width: "100%",
+      height: "100%"
     },
     margin: {
-      marginTop: '100px',
-      marginBottom: '40px'
+      marginTop: "100px",
+      marginBottom: "40px"
     },
     h1: {
-      padding: '10px',
-      backgroundColor: '#0D47A1'
+      padding: "10px",
+      backgroundColor: "#0D47A1"
     },
     description: {
-      padding: '10px',
-      marginBottom: '15px'
+      padding: "10px",
+      marginBottom: "15px"
     },
     content: {
-      overflow: 'hidden',
-      backgroundColor: theme.palette.secondary
+      overflow: "hidden",
+      backgroundColor: theme.palette.secondary,
+      textAlign: "center"
     },
     contentWrapper: {
-      padding: '10px'
+      padding: "10px"
     },
     clickDesc: {
-      marginTop: '20px'
+      marginTop: "20px"
     },
     techGrid: {
-      backgroundColor: '#9E9E9E',
+      backgroundColor: "#9E9E9E",
       marginTop: 40,
       opacity: 0.9
     },
     button: {
       margin: 10,
-      cursor: 'pointer'
+      cursor: "pointer"
     }
   };
 };
@@ -694,7 +695,7 @@ var ImgBox = react_pose__WEBPACK_IMPORTED_MODULE_9__["default"].div({
   hoverable: true,
   init: {
     scale: 1,
-    boxShadow: '0px 0px 0px rgba(0,0,0,0)'
+    boxShadow: "0px 0px 0px rgba(0,0,0,0)"
   },
   hover: {
     scale: 1.1
@@ -705,7 +706,7 @@ var Content = react_pose__WEBPACK_IMPORTED_MODULE_9__["default"].div({
     height: 0
   },
   open: {
-    height: 'auto'
+    height: "auto"
   }
 });
 
@@ -723,29 +724,35 @@ function (_React$Component) {
     _this.state = {
       open: false,
       projects: [{
-        title: 'Neighborhood Map (React)',
-        description: 'Build a single page map application using React and the Google Maps API. Integrate a third-party data API and make your app accessible and usable offline.',
-        link: 'https://github.com/darknight1983/neighboorhood-react-map',
-        technologies: ['Google Maps API', 'React', 'Material-UI'],
-        image: '/static/imgs/NeighboorhoodMap.png'
+        title: "The Greatest Marketing Agency",
+        description: "The web application for a small marketing agency in Dallas, Tx. ",
+        link: "https://thegreatest.netlify.com",
+        technologies: ["Material-UI", "Next.js", "React", "Pose"],
+        image: "/static/imgs/TGMA.png"
       }, {
-        title: 'Addison Treehouse Benefits',
+        title: "Neighborhood Map (React)",
+        description: "Build a single page map application using React and the Google Maps API. Integrate a third-party data API and make your app accessible and usable offline.",
+        link: "https://github.com/darknight1983/neighboorhood-react-map",
+        technologies: ["Google Maps API", "React", "Material-UI"],
+        image: "/static/imgs/NeighboorhoodMap.png"
+      }, {
+        title: "Addison Treehouse Benefits",
         description: "Currently working on a web application for Addision Treehouse which serves as a hub for all member benefits and perks. Future iterations are in progress.",
         link: "https://github.com/darknight1983/Treehouse.git",
-        technologies: ['Material-UI', 'Next.js', 'React', 'Pose'],
-        image: '/static/imgs/AddisonTreehouse.png'
+        technologies: ["Material-UI", "Next.js", "React", "Pose"],
+        image: "/static/imgs/AddisonTreehouse.png"
       }, {
-        title: 'MyReads: A Book Lending App',
-        description: 'Built a responsive web application that allows users to select and categorize books into a virtual bookshelf. Leveraged React to support a dynamic user interface that interacts with an API server and client library.',
+        title: "MyReads: A Book Lending App",
+        description: "Built a responsive web application that allows users to select and categorize books into a virtual bookshelf. Leveraged React to support a dynamic user interface that interacts with an API server and client library.",
         link: "https://github.com/darknight1983/myReads",
-        technologies: ['React', 'Node', 'Express'],
-        image: '/static/imgs/testProject.png'
+        technologies: ["React", "Node", "Express"],
+        image: "/static/imgs/testProject.png"
       }, {
-        title: 'Bamazon',
-        description: 'A Node.js & MySQL digital storefront. This is a command line Node app that mimics a beloved online retailer.',
-        link: 'https://github.com/darknight1983/bamazon_app',
-        technologies: ['MYSQL', 'Inquirer', 'Cli-table', "Node.js"],
-        image: '/static/imgs/bamazon.png'
+        title: "Bamazon",
+        description: "A Node.js & MySQL digital storefront. This is a command line Node app that mimics a beloved online retailer.",
+        link: "https://github.com/darknight1983/bamazon_app",
+        technologies: ["MYSQL", "Inquirer", "Cli-table", "Node.js"],
+        image: "/static/imgs/bamazon.png"
       }]
     };
     return _this;
@@ -764,7 +771,7 @@ function (_React$Component) {
         className: classes.margin,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118
+          lineNumber: 128
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -775,7 +782,7 @@ function (_React$Component) {
         className: classes.margin,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119
+          lineNumber: 129
         },
         __self: this
       }, "Projects"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -785,7 +792,7 @@ function (_React$Component) {
         spacing: 16,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126
+          lineNumber: 138
         },
         __self: this
       }, projects.map(function (project, i) {
@@ -799,14 +806,14 @@ function (_React$Component) {
           lg: 5,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 128
+            lineNumber: 145
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default.a, {
           square: true,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 134
+            lineNumber: 154
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -817,7 +824,7 @@ function (_React$Component) {
           className: classes.h1,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 135
+            lineNumber: 155
           },
           __self: this
         }, project.title), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -826,7 +833,7 @@ function (_React$Component) {
           align: "center",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 142
+            lineNumber: 164
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -838,7 +845,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 143
+            lineNumber: 165
           },
           __self: this
         }, "Code")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -853,15 +860,15 @@ function (_React$Component) {
           className: classes.clickDesc,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 150
+            lineNumber: 174
           },
           __self: this
         }, "Click for description"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(Content, {
           className: classes.content,
-          pose: open === i ? 'open' : 'closed',
+          pose: open === i ? "open" : "closed",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 157
+            lineNumber: 185
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -870,7 +877,7 @@ function (_React$Component) {
           variant: "subheading",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 158
+            lineNumber: 189
           },
           __self: this
         }, project.description)), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -878,7 +885,7 @@ function (_React$Component) {
           justify: "center",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 164
+            lineNumber: 197
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -886,13 +893,13 @@ function (_React$Component) {
           className: classes.projects,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 165
+            lineNumber: 198
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ImgBox, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 166
+            lineNumber: 199
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("img", {
@@ -901,7 +908,7 @@ function (_React$Component) {
           className: classes.projectImg,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 167
+            lineNumber: 200
           },
           __self: this
         })))), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -909,7 +916,7 @@ function (_React$Component) {
           className: classes.techGrid,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 173
+            lineNumber: 208
           },
           __self: this
         }, project.technologies.map(function (tech, i) {
@@ -919,7 +926,7 @@ function (_React$Component) {
             align: "center",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 175
+              lineNumber: 210
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -927,7 +934,7 @@ function (_React$Component) {
             color: "primary",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 176
+              lineNumber: 211
             },
             __self: this
           }, tech));
@@ -32390,7 +32397,7 @@ var Box = react_pose__WEBPACK_IMPORTED_MODULE_2__["default"].div({
   hoverable: true,
   init: {
     scale: 1,
-    boxShadow: '0px 0px 0px rgba(0,0,0,0)'
+    boxShadow: "0px 0px 0px rgba(0,0,0,0)"
   },
   hover: {
     scale: 1.2
@@ -32401,36 +32408,36 @@ var Index = function Index() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 22
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 23
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 24
     },
     __self: this
-  }, "Index Page"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+  }, "JGreen"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
     name: "description",
     content: "This is the Index page",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 25
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     style: {
-      'marginTop': '100px'
+      marginTop: "100px"
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 27
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -32438,7 +32445,7 @@ var Index = function Index() {
     justify: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 28
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -32449,14 +32456,14 @@ var Index = function Index() {
     lg: 4,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 29
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Box, {
     style: _components_sharedStyles__WEBPACK_IMPORTED_MODULE_5__["indexPageImg"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 30
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -32464,25 +32471,25 @@ var Index = function Index() {
     style: _components_sharedStyles__WEBPACK_IMPORTED_MODULE_5__["myPhoto"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 31
     },
     __self: this
   }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AboutMe__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 36
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Projects__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 37
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Contact__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 38
     },
     __self: this
   }));

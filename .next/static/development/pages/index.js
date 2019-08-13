@@ -724,6 +724,12 @@ function (_React$Component) {
     _this.state = {
       open: false,
       projects: [{
+        title: "D.A.N.C.E Academy",
+        description: "A static website for the D.A.N.C.E Academy in Dallas, Tx.",
+        link: "https://dance-5f791.firebaseapp.com/",
+        technologies: ["HTML", "CSS", "Javascript", "SASS"],
+        image: "/static/imgs/DanceWebsite.png"
+      }, {
         title: "The Greatest Marketing Agency",
         description: "The web application for a small marketing agency in Dallas, Tx. ",
         link: "https://thegreatest.netlify.com",
@@ -771,7 +777,7 @@ function (_React$Component) {
         className: classes.margin,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 135
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -782,7 +788,7 @@ function (_React$Component) {
         className: classes.margin,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
+          lineNumber: 136
         },
         __self: this
       }, "Projects"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -792,7 +798,7 @@ function (_React$Component) {
         spacing: 16,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138
+          lineNumber: 145
         },
         __self: this
       }, projects.map(function (project, i) {
@@ -806,14 +812,14 @@ function (_React$Component) {
           lg: 5,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 145
+            lineNumber: 152
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default.a, {
           square: true,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 154
+            lineNumber: 161
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -824,7 +830,7 @@ function (_React$Component) {
           className: classes.h1,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 155
+            lineNumber: 162
           },
           __self: this
         }, project.title), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -833,7 +839,7 @@ function (_React$Component) {
           align: "center",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 164
+            lineNumber: 171
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -845,7 +851,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 165
+            lineNumber: 172
           },
           __self: this
         }, "Code")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -860,7 +866,7 @@ function (_React$Component) {
           className: classes.clickDesc,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 174
+            lineNumber: 181
           },
           __self: this
         }, "Click for description"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(Content, {
@@ -868,7 +874,7 @@ function (_React$Component) {
           pose: open === i ? "open" : "closed",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 185
+            lineNumber: 192
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -877,7 +883,7 @@ function (_React$Component) {
           variant: "subheading",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 189
+            lineNumber: 196
           },
           __self: this
         }, project.description)), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -885,7 +891,7 @@ function (_React$Component) {
           justify: "center",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 197
+            lineNumber: 204
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -893,13 +899,13 @@ function (_React$Component) {
           className: classes.projects,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 198
+            lineNumber: 205
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ImgBox, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 199
+            lineNumber: 206
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("img", {
@@ -908,7 +914,7 @@ function (_React$Component) {
           className: classes.projectImg,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 200
+            lineNumber: 207
           },
           __self: this
         })))), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -916,7 +922,7 @@ function (_React$Component) {
           className: classes.techGrid,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 208
+            lineNumber: 215
           },
           __self: this
         }, project.technologies.map(function (tech, i) {
@@ -926,7 +932,7 @@ function (_React$Component) {
             align: "center",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 210
+              lineNumber: 217
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -934,7 +940,7 @@ function (_React$Component) {
             color: "primary",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 211
+              lineNumber: 218
             },
             __self: this
           }, tech));

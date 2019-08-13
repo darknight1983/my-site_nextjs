@@ -79,6 +79,13 @@ class Projects extends React.Component {
       open: false,
       projects: [
         {
+          title: "D.A.N.C.E Academy",
+          description: "A static website for the D.A.N.C.E Academy in Dallas, Tx.",
+          link: "https://dance-5f791.firebaseapp.com/",
+          technologies: ["HTML", "CSS", "Javascript", "SASS"],
+          image: "/static/imgs/DanceWebsite.png"
+        },
+        {
           title: "The Greatest Marketing Agency",
           description:
             "The web application for a small marketing agency in Dallas, Tx. ",

@@ -820,41 +820,54 @@ function (_React$Component) {
     _this.state = {
       open: false,
       projects: [{
+        title: "Tandy's Sweet Treats",
+        description: "A static website for 'Tandy's Sweet Treats', New Orleans.",
+        link: "https://tandy-sweet-treat.firebaseapp.com/index.html",
+        technologies: ["HTML", "CSS", "Javascript", "SASS"],
+        image: "static/imgs/Sweet_Treats.png",
+        isLive: true
+      }, {
         title: "D.A.N.C.E Academy",
         description: "A static website for the D.A.N.C.E Academy in Dallas, Tx.",
         link: "https://dance-5f791.firebaseapp.com/",
         technologies: ["HTML", "CSS", "Javascript", "SASS"],
-        image: "/static/imgs/DanceWebsite.png"
+        image: "/static/imgs/DanceWebsite.png",
+        isLive: true
       }, {
         title: "The Greatest Marketing Agency",
         description: "The web application for a small marketing agency in Dallas, Tx. ",
         link: "https://thegreatest.netlify.com",
         technologies: ["Material-UI", "Next.js", "React", "Pose"],
-        image: "/static/imgs/TGMA.png"
+        image: "/static/imgs/TGMA.png",
+        isLive: true
       }, {
         title: "Neighborhood Map (React)",
         description: "Build a single page map application using React and the Google Maps API. Integrate a third-party data API and make your app accessible and usable offline.",
         link: "https://github.com/darknight1983/neighboorhood-react-map",
         technologies: ["Google Maps API", "React", "Material-UI"],
-        image: "/static/imgs/NeighboorhoodMap.png"
+        image: "/static/imgs/NeighboorhoodMap.png",
+        isLive: false
       }, {
         title: "Addison Treehouse Benefits",
         description: "Currently working on a web application for Addision Treehouse which serves as a hub for all member benefits and perks. Future iterations are in progress.",
         link: "https://github.com/darknight1983/Treehouse.git",
         technologies: ["Material-UI", "Next.js", "React", "Pose"],
-        image: "/static/imgs/AddisonTreehouse.png"
+        image: "/static/imgs/AddisonTreehouse.png",
+        isLive: false
       }, {
         title: "MyReads: A Book Lending App",
         description: "Built a responsive web application that allows users to select and categorize books into a virtual bookshelf. Leveraged React to support a dynamic user interface that interacts with an API server and client library.",
         link: "https://github.com/darknight1983/myReads",
         technologies: ["React", "Node", "Express"],
-        image: "/static/imgs/testProject.png"
+        image: "/static/imgs/testProject.png",
+        isLive: false
       }, {
         title: "Bamazon",
         description: "A Node.js & MySQL digital storefront. This is a command line Node app that mimics a beloved online retailer.",
         link: "https://github.com/darknight1983/bamazon_app",
         technologies: ["MYSQL", "Inquirer", "Cli-table", "Node.js"],
-        image: "/static/imgs/bamazon.png"
+        image: "/static/imgs/bamazon.png",
+        isLive: false
       }]
     };
     return _this;
@@ -873,7 +886,7 @@ function (_React$Component) {
         className: classes.margin,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 135
+          lineNumber: 149
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -884,7 +897,7 @@ function (_React$Component) {
         className: classes.margin,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 136
+          lineNumber: 150
         },
         __self: this
       }, "Projects"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -894,7 +907,7 @@ function (_React$Component) {
         spacing: 16,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 145
+          lineNumber: 159
         },
         __self: this
       }, projects.map(function (project, i) {
@@ -908,14 +921,14 @@ function (_React$Component) {
           lg: 5,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 152
+            lineNumber: 166
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_3___default.a, {
           square: true,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 161
+            lineNumber: 175
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -926,7 +939,7 @@ function (_React$Component) {
           className: classes.h1,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 162
+            lineNumber: 176
           },
           __self: this
         }, project.title), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -935,7 +948,7 @@ function (_React$Component) {
           align: "center",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 171
+            lineNumber: 185
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -947,10 +960,10 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 172
+            lineNumber: 186
           },
           __self: this
-        }, "Code")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
+        }, project.isLive ? "View Website" : "View Codebase")), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
           variant: "title",
           component: "h5",
           align: "center",
@@ -962,7 +975,7 @@ function (_React$Component) {
           className: classes.clickDesc,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 181
+            lineNumber: 195
           },
           __self: this
         }, "Click for description"), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(Content, {
@@ -970,7 +983,7 @@ function (_React$Component) {
           pose: open === i ? "open" : "closed",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 192
+            lineNumber: 206
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -979,7 +992,7 @@ function (_React$Component) {
           variant: "subheading",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 196
+            lineNumber: 210
           },
           __self: this
         }, project.description)), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -987,7 +1000,7 @@ function (_React$Component) {
           justify: "center",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 204
+            lineNumber: 218
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -995,13 +1008,13 @@ function (_React$Component) {
           className: classes.projects,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 205
+            lineNumber: 219
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(ImgBox, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 206
+            lineNumber: 220
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement("img", {
@@ -1010,7 +1023,7 @@ function (_React$Component) {
           className: classes.projectImg,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 207
+            lineNumber: 221
           },
           __self: this
         })))), react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -1018,7 +1031,7 @@ function (_React$Component) {
           className: classes.techGrid,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 215
+            lineNumber: 229
           },
           __self: this
         }, project.technologies.map(function (tech, i) {
@@ -1028,7 +1041,7 @@ function (_React$Component) {
             align: "center",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 217
+              lineNumber: 231
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_0___default.a, {
@@ -1036,7 +1049,7 @@ function (_React$Component) {
             color: "primary",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 218
+              lineNumber: 232
             },
             __self: this
           }, tech));

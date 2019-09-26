@@ -79,11 +79,20 @@ class Projects extends React.Component {
       open: false,
       projects: [
         {
+          title: "Tandy's Sweet Treats",
+          description: "A static website for 'Tandy's Sweet Treats', New Orleans.",
+          link: "https://tandy-sweet-treat.firebaseapp.com/index.html",
+          technologies: ["HTML", "CSS", "Javascript", "SASS"],
+          image: "static/imgs/Sweet_Treats.png",
+          isLive: true,
+        },
+        {
           title: "D.A.N.C.E Academy",
           description: "A static website for the D.A.N.C.E Academy in Dallas, Tx.",
           link: "https://dance-5f791.firebaseapp.com/",
           technologies: ["HTML", "CSS", "Javascript", "SASS"],
-          image: "/static/imgs/DanceWebsite.png"
+          image: "/static/imgs/DanceWebsite.png",
+          isLive: true,
         },
         {
           title: "The Greatest Marketing Agency",
@@ -91,7 +100,8 @@ class Projects extends React.Component {
             "The web application for a small marketing agency in Dallas, Tx. ",
           link: "https://thegreatest.netlify.com",
           technologies: ["Material-UI", "Next.js", "React", "Pose"],
-          image: "/static/imgs/TGMA.png"
+          image: "/static/imgs/TGMA.png",
+          isLive: true,
         },
         {
           title: "Neighborhood Map (React)",
@@ -99,7 +109,8 @@ class Projects extends React.Component {
             "Build a single page map application using React and the Google Maps API. Integrate a third-party data API and make your app accessible and usable offline.",
           link: "https://github.com/darknight1983/neighboorhood-react-map",
           technologies: ["Google Maps API", "React", "Material-UI"],
-          image: "/static/imgs/NeighboorhoodMap.png"
+          image: "/static/imgs/NeighboorhoodMap.png",
+          isLive: false,
         },
         {
           title: "Addison Treehouse Benefits",
@@ -107,7 +118,8 @@ class Projects extends React.Component {
             "Currently working on a web application for Addision Treehouse which serves as a hub for all member benefits and perks. Future iterations are in progress.",
           link: "https://github.com/darknight1983/Treehouse.git",
           technologies: ["Material-UI", "Next.js", "React", "Pose"],
-          image: "/static/imgs/AddisonTreehouse.png"
+          image: "/static/imgs/AddisonTreehouse.png",
+          isLive: false,
         },
         {
           title: "MyReads: A Book Lending App",
@@ -115,7 +127,8 @@ class Projects extends React.Component {
             "Built a responsive web application that allows users to select and categorize books into a virtual bookshelf. Leveraged React to support a dynamic user interface that interacts with an API server and client library.",
           link: "https://github.com/darknight1983/myReads",
           technologies: ["React", "Node", "Express"],
-          image: "/static/imgs/testProject.png"
+          image: "/static/imgs/testProject.png",
+          isLive: false,
         },
         {
           title: "Bamazon",
@@ -123,7 +136,8 @@ class Projects extends React.Component {
             "A Node.js & MySQL digital storefront. This is a command line Node app that mimics a beloved online retailer.",
           link: "https://github.com/darknight1983/bamazon_app",
           technologies: ["MYSQL", "Inquirer", "Cli-table", "Node.js"],
-          image: "/static/imgs/bamazon.png"
+          image: "/static/imgs/bamazon.png",
+          isLive: false,
         }
       ]
     };
@@ -175,7 +189,7 @@ class Projects extends React.Component {
                     className={classes.button}
                     onClick={() => (window.location.href = project.link)}
                   >
-                    Code
+                    {(project.isLive) ? "View Website" : "View Codebase"}
                   </Button>
                 </Grid>
                 <Typography

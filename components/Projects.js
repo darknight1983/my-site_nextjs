@@ -79,6 +79,14 @@ class Projects extends React.Component {
       open: false,
       projects: [
         {
+          title: "Grays Tax Express",
+          description: "A static website for Grays Tax Express",
+          link: "http://www.graystaxexpress.com",
+          technologies: ["Gatsby", "Material-UI", "React"],
+          image: "static/imgs/graystax.png",
+          isLive: true,
+        },
+        {
           title: "Tandy's Sweet Treats",
           description: "A static website for 'Tandy's Sweet Treats', New Orleans.",
           link: "https://tandy-sweet-treat.firebaseapp.com/index.html",
